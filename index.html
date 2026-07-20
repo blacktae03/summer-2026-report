@@ -77,7 +77,7 @@ html,body{
   flex-direction:column;
 }
 
-/* ---------- chrome: footer, logo, counter ---------- */
+/* ---------- chrome: footer, counter ---------- */
 .chrome-footer{
   position:absolute;
   left:7vw;
@@ -104,12 +104,12 @@ html,body{
 .slide.dark-chrome .chrome-counter{color:rgba(255,255,255,.72);}
 .slide.dark-chrome .chrome-footer .dot{background:#fff;}
 
-/* ---------- typography scale (1.333 ratio) ---------- */
-.t-caption{font-size:18px;line-height:1.5;color:var(--ink-soft);}
-.t-body{font-size:21px;line-height:1.55;color:var(--ink);}
-.t-subhead{font-size:28px;line-height:1.3;font-weight:700;}
-.t-title{font-size:42px;line-height:1.15;font-weight:900;letter-spacing:-.01em;}
-.t-display{font-size:64px;line-height:1.05;font-weight:900;letter-spacing:-.02em;}
+/* ---------- typography scale ---------- */
+.t-caption{font-size:19px;line-height:1.5;color:var(--ink-soft);}
+.t-body{font-size:24px;line-height:1.5;color:var(--ink);}
+.t-subhead{font-size:34px;line-height:1.25;font-weight:700;}
+.t-title{font-size:48px;line-height:1.1;font-weight:900;letter-spacing:-.01em;}
+.t-display{font-size:68px;line-height:1.05;font-weight:900;letter-spacing:-.02em;}
 .t-mega{font-size:132px;line-height:1;font-weight:900;letter-spacing:-.03em;}
 
 .eyebrow{
@@ -134,19 +134,19 @@ html,body{
 .tag{
   display:inline-flex;align-items:center;
   font-family:"JetBrains Mono",monospace;
-  font-size:14px;font-weight:700;
-  padding:6px 14px;border-radius:100px;
+  font-size:15px;font-weight:700;
+  padding:8px 16px;border-radius:100px;
   background:var(--accent-soft);color:var(--accent-ink);
   letter-spacing:.02em;
 }
-ul.blist{list-style:none;display:flex;flex-direction:column;gap:16px;}
-ul.blist li{padding-left:28px;position:relative;font-size:21px;line-height:1.5;}
+ul.blist{list-style:none;display:flex;flex-direction:column;gap:20px;}
+ul.blist li{padding-left:30px;position:relative;font-size:24px;line-height:1.4;font-weight:500;}
 ul.blist li::before{
-  content:"";position:absolute;left:0;top:11px;
-  width:8px;height:8px;background:var(--accent);border-radius:2px;
+  content:"";position:absolute;left:0;top:12px;
+  width:9px;height:9px;background:var(--accent);border-radius:2px;
 }
-ul.blist li b{font-weight:700;}
-ul.blist.dense li{font-size:19px;}
+ul.blist li b{font-weight:900;}
+ul.blist.dense li{font-size:21px;}
 
 .section-divider{
   background:var(--accent);
@@ -162,7 +162,7 @@ ul.blist.dense li{font-size:19px;}
   color:var(--accent);
   border:1px solid var(--accent);
   border-radius:100px;
-  width:40px;height:40px;
+  width:44px;height:44px;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
 }
@@ -184,7 +184,7 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
 @media (max-width:900px){
   .t-mega{font-size:76px;}
   .t-display{font-size:40px;}
-  .t-title{font-size:30px;}
+  .t-title{font-size:32px;}
   .grid12{grid-template-columns:1fr;}
 }
 </style>
@@ -196,15 +196,15 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
 <!-- ============ 1. TITLE ============ -->
 <section class="slide">
   <div class="pad" style="justify-content:center;">
-    <div class="eyebrow">2026 SUMMER SESSION REPORT</div>
+    <div class="eyebrow">2026 SUMMER SESSION</div>
     <div style="height:32px;"></div>
     <div class="t-mega">여름 계절학기<br>3주의 기록</div>
     <div style="height:24px;"></div>
-    <div class="t-subhead" style="font-weight:500;color:var(--ink-soft);">논문 스터디 · 창업 앱 개발 · 부트캠프 · 해커톤 · 게임 개발</div>
+    <div class="t-subhead" style="font-weight:500;color:var(--ink-soft);">논문 · 창업 · 부트캠프 · 해커톤 · 게임</div>
     <div style="height:48px;"></div>
     <div style="display:flex;gap:32px;align-items:center;">
       <span class="tag">김정태</span>
-      <span class="t-body mono" style="color:var(--ink-soft);">2026.06.25 – 2026.07.20</span>
+      <span class="t-body mono" style="color:var(--ink-soft);">2026.06.25 – 07.20</span>
     </div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>SUMMER SESSION</div>
@@ -216,28 +216,28 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">OVERVIEW</div>
     <div style="height:20px;"></div>
-    <div class="t-title">3주 동안 다섯 갈래로 달렸습니다</div>
+    <div class="t-title">다섯 갈래</div>
     <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
-      <div class="card" style="grid-column:span 6;display:flex;gap:20px;align-items:flex-start;">
+      <div class="card" style="grid-column:span 6;display:flex;gap:24px;align-items:center;">
         <div class="num-badge">01</div>
-        <div><div class="t-subhead">머신러닝 논문 스터디</div><div class="t-caption">추천시스템 계열 논문 로드맵 정독</div></div>
+        <div class="t-subhead">머신러닝 논문 스터디</div>
       </div>
-      <div class="card" style="grid-column:span 6;display:flex;gap:20px;align-items:flex-start;">
+      <div class="card" style="grid-column:span 6;display:flex;gap:24px;align-items:center;">
         <div class="num-badge">02</div>
-        <div><div class="t-subhead">창업 아이디어 실행 — 시장패스</div><div class="t-caption">모두의 창업 아이디어를 실제 앱으로</div></div>
+        <div class="t-subhead">창업 앱 — 시장패스</div>
       </div>
-      <div class="card" style="grid-column:span 6;display:flex;gap:20px;align-items:flex-start;">
+      <div class="card" style="grid-column:span 6;display:flex;gap:24px;align-items:center;">
         <div class="num-badge">03</div>
-        <div><div class="t-subhead">카카오테크캠퍼스 + 실습 프로젝트</div><div class="t-caption">LLM 에이전트 부트캠프 3주 실습</div></div>
+        <div class="t-subhead">카카오테크캠퍼스</div>
       </div>
-      <div class="card" style="grid-column:span 6;display:flex;gap:20px;align-items:flex-start;">
+      <div class="card" style="grid-column:span 6;display:flex;gap:24px;align-items:center;">
         <div class="num-badge">04</div>
-        <div><div class="t-subhead">DIVE 해커톤</div><div class="t-caption">HUG 전세보증 데이터로 리스크 모델링</div></div>
+        <div class="t-subhead">DIVE 해커톤</div>
       </div>
-      <div class="card" style="grid-column:span 12;display:flex;gap:20px;align-items:flex-start;">
+      <div class="card" style="grid-column:span 12;display:flex;gap:24px;align-items:center;">
         <div class="num-badge">05</div>
-        <div><div class="t-subhead">게임 개발 (가제)</div><div class="t-caption">한국사 소재 뱀서라이크 로그라이크, 현재 진행 중</div></div>
+        <div class="t-subhead">게임 개발 (가제) — 진행 중</div>
       </div>
     </div>
   </div>
@@ -252,7 +252,7 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div style="height:24px;"></div>
     <div class="t-mega">머신러닝<br>논문 스터디</div>
     <div style="height:24px;"></div>
-    <div class="t-subhead" style="font-weight:500;">추천시스템 계열 5편 로드맵 — Matrix Factorization부터 Neural Collaborative Filtering까지</div>
+    <div class="t-subhead" style="font-weight:500;">MF → FM → NCF, 추천시스템 3편</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>01 · ML PAPERS</div>
   <div class="chrome-counter">03 / 25</div>
@@ -265,19 +265,13 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div style="height:20px;"></div>
     <div class="t-title">학습 로드맵</div>
     <div style="height:16px;"></div>
-    <div class="t-body" style="color:var(--ink-soft);max-width:60ch;">추천 시스템의 수학적 모델링이 발전해온 순서를 그대로 따라 읽었습니다. 겉핥기로 여러 편을 읽기보다, 수식 하나·문장 하나가 왜 그 형태인지 끝까지 캐묻는 방식으로 공부했습니다.</div>
-    <div style="height:40px;"></div>
+    <div class="t-body" style="color:var(--ink-soft);max-width:52ch;">수식 하나하나의 존재 이유를 끝까지 캐묻는 방식으로 정독했습니다.</div>
+    <div style="height:56px;"></div>
     <div style="display:flex;gap:16px;flex-wrap:wrap;flex:1;align-content:flex-start;">
-      <span class="tag" style="background:var(--accent);color:#fff;">Matrix Factorization</span>
-      <span class="tag">Factorization Machines</span>
-      <span class="tag">Neural Collaborative Filtering</span>
-      <span class="tag" style="opacity:.55;">Neural Graph CF</span>
-      <span class="tag" style="opacity:.55;">DeepFM</span>
-      <span class="tag" style="opacity:.55;">GRU4Rec</span>
-      <span class="tag" style="opacity:.55;">SASRec</span>
-    </div>
-    <div class="card" style="margin-top:auto;">
-      <div class="t-body">"2시간 반 동안 논문 2페이지 반밖에 못 나간 날도 있었지만, 겉핥기로 여러 편을 읽는 것보다 뼈대를 완전히 분해했다가 다시 조립해보는 게 훨씬 오래 남는 공부라는 확신이 들었다."</div>
+      <span class="tag" style="background:var(--accent);color:#fff;font-size:20px;padding:14px 24px;">Matrix Factorization</span>
+      <span class="tag" style="font-size:20px;padding:14px 24px;">Factorization Machines</span>
+      <span class="tag" style="font-size:20px;padding:14px 24px;">Neural Collaborative Filtering</span>
+      <span class="tag" style="opacity:.5;font-size:20px;padding:14px 24px;">다음: NGCF · DeepFM · GRU4Rec · SASRec</span>
     </div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>01 · ML PAPERS</div>
@@ -290,22 +284,18 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div class="eyebrow">01 · ML PAPERS</div>
     <div style="height:20px;"></div>
     <div class="t-title">Matrix Factorization</div>
-    <div class="t-caption">Koren et al., 2009 — Netflix Prize 우승팀의 핵심 알고리즘</div>
-    <div style="height:36px;"></div>
+    <div class="t-caption">Koren et al., 2009 · Netflix Prize</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div style="grid-column:span 7;">
         <ul class="blist">
-          <li><b>기본 아이디어</b> — 유저·아이템을 같은 잠재요인 공간에 매핑, 내적으로 평점을 예측</li>
-          <li><b>확장 ①</b> — Bias(개인 평점 성향), 암시적 피드백, 인구통계 정보 결합</li>
-          <li><b>확장 ②</b> — Temporal Dynamics: 취향은 고정이 아니라 시간에 따라 변함(Power-law 감쇠)</li>
-          <li><b>확장 ③</b> — Confidence: 어뷰징·일회성 클릭보다 반복 행동에 더 큰 가중치</li>
+          <li>유저·아이템을 <b>잠재요인 벡터</b>로 매핑 → 내적으로 평점 예측</li>
+          <li><b>Bias</b> — 개인 평점 성향까지 반영</li>
+          <li><b>Temporal Dynamics</b> — 취향은 시간에 따라 변함</li>
         </ul>
       </div>
-      <div style="grid-column:span 5;display:flex;flex-direction:column;gap:16px;">
-        <div class="card" style="flex:1;">
-          <div class="tag" style="margin-bottom:12px;">INSIGHT</div>
-          <div class="t-body">차원 수(f)를 200으로 늘린 단순 모델보다, Bias·암시적 피드백 같은 <b>정교한 파라미터</b>를 추가한 모델이 차원 10만으로도 오차가 훨씬 낮았다.</div>
-        </div>
+      <div class="card" style="grid-column:span 5;display:flex;align-items:center;">
+        <div class="t-body"><b style="color:var(--accent);">차원 10 &lt; 차원 200</b><br>정교한 파라미터가 무식한 차원 확장을 이겼다</div>
       </div>
     </div>
   </div>
@@ -319,20 +309,20 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div class="eyebrow">01 · ML PAPERS</div>
     <div style="height:20px;"></div>
     <div class="t-title">Factorization Machines</div>
-    <div class="t-caption">Steffen Rendle, 2010 — 희소 데이터에서 SVM의 한계를 넘다</div>
-    <div style="height:36px;"></div>
+    <div class="t-caption">Steffen Rendle, 2010</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">문제</div>
-        <div class="t-body">유저·아이템을 원-핫 인코딩하면 두 변수가 같이 등장한 적 없는 조합의 상호작용 파라미터는 학습 자체가 불가능</div>
+        <div class="tag" style="margin-bottom:20px;">문제</div>
+        <div class="t-body">희소 데이터에서 SVM은 학습 자체가 불가능</div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">해결</div>
-        <div class="t-body">상호작용 가중치를 독립값 대신 <b>두 잠재벡터의 내적</b>으로 분해 — 서로 만난 적 없어도 벡터로 간접 추정</div>
+        <div class="tag" style="margin-bottom:20px;">해결</div>
+        <div class="t-body">상호작용을 <b>잠재벡터 내적</b>으로 분해</div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">효율</div>
-        <div class="t-body">완전제곱식 트릭으로 연산량을 O(kn²)에서 <b>O(kn)</b>까지 압축 — 1억 건 규모에서도 학습 가능</div>
+        <div class="tag" style="margin-bottom:20px;">효율</div>
+        <div class="t-body"><b>O(kn²) → O(kn)</b> 로 압축</div>
       </div>
     </div>
   </div>
@@ -345,23 +335,21 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">01 · ML PAPERS</div>
     <div style="height:20px;"></div>
-    <div class="t-title">Neural Collaborative Filtering · SVM Duality</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">NCF · SVM Duality</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">NCF (He et al., 2017)</div>
-        <ul class="blist dense">
-          <li>내적이라는 선형 연산으로 상호작용 함수를 고정한 게 MF의 한계</li>
-          <li>Jaccard 계수를 반례로 사용해 내적의 기하학적 제약(삼각부등식)을 증명</li>
-          <li>내적 대신 <b>MLP</b>로 비선형 상호작용을 직접 학습</li>
+        <div class="t-subhead" style="margin-bottom:24px;">NCF (2017)</div>
+        <ul class="blist">
+          <li>내적은 <b>선형 연산</b> — 기하학적 한계 존재</li>
+          <li>내적 대신 <b>MLP</b>로 비선형 상호작용 학습</li>
         </ul>
       </div>
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">SVM Duality (CS229)</div>
-        <ul class="blist dense">
-          <li>Primal ↔ Dual: 최소·최대의 연산 순서를 바꾸는 것뿐</li>
-          <li>Convex + Affine 조건 → 강쌍대성 → KKT → Support Vector</li>
-          <li>새 데이터는 소수의 <b>Support Vector와의 내적</b>만으로 분류 — Kernel Trick의 토대</li>
+        <div class="t-subhead" style="margin-bottom:24px;">SVM Duality</div>
+        <ul class="blist">
+          <li>Convex + Affine → <b>강쌍대성</b> → KKT</li>
+          <li><b>Support Vector</b>와의 내적만으로 분류</li>
         </ul>
       </div>
     </div>
@@ -375,9 +363,9 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad" style="justify-content:center;">
     <div class="eyebrow">SECTION 02</div>
     <div style="height:24px;"></div>
-    <div class="t-mega">창업 아이디어 실행<br>시장패스</div>
+    <div class="t-mega">창업 앱<br>시장패스</div>
     <div style="height:24px;"></div>
-    <div class="t-subhead" style="font-weight:500;">모두의 창업에 출간한 아이디어를 실제로 만드는 3주</div>
+    <div class="t-subhead" style="font-weight:500;">아이디어를 실제 서비스로</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>02 · 시장패스</div>
   <div class="chrome-counter">08 / 25</div>
@@ -388,21 +376,19 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">02 · 시장패스</div>
     <div style="height:20px;"></div>
-    <div class="t-title">시장패스 (Sijang Pass)</div>
-    <div class="t-caption">지역 문화 생활을 저렴하고 다양하게 즐기는 걸 도와주는 앱</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">시장패스</div>
+    <div class="t-caption">지역 문화생활을 저렴하게, QR 구독 할인 앱</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div style="grid-column:span 7;">
         <ul class="blist">
-          <li><b>타깃</b> — 청주 지역 주민(대학생 포함), 전통시장·맛집·놀거리</li>
-          <li><b>핵심 구조</b> — QR 결제 시 자동 할인 + 월 구독(9,900원)으로 추가 혜택</li>
-          <li><b>출발점</b> — 부산대 창업지원단·산학협력단 지원 프로그램 조사부터 시작</li>
-          <li><b>목표</b> — 강의 과제가 아니라 <b>실제 창업/서비스 출시</b></li>
+          <li><b>타깃</b> — 청주 지역 주민, 전통시장·맛집·놀거리</li>
+          <li><b>구조</b> — QR 결제 자동할인 + 월 구독 9,900원</li>
+          <li><b>목표</b> — 과제가 아니라 <b>실제 창업</b></li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 5;">
-        <div class="tag" style="margin-bottom:14px;">플랫폼</div>
-        <div class="t-body">Android + iOS 동시 출시 목표<br>Flutter(프론트) · FastAPI(백엔드)</div>
+      <div class="card" style="grid-column:span 5;display:flex;align-items:center;">
+        <div class="t-body">Android + iOS<br><b>동시 출시</b> 목표</div>
       </div>
     </div>
   </div>
@@ -415,26 +401,19 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">02 · 시장패스</div>
     <div style="height:20px;"></div>
-    <div class="t-title">핵심 기능 & 기술 스택</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">기능 & 기술 스택</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 7;">
-        <div class="t-subhead" style="margin-bottom:16px;">화면 8종 디자인 완료</div>
-        <ul class="blist dense">
-          <li>스플래시 · 홈(주변 제휴맛집 지도) · 전통시장/맛집/놀거리 목록</li>
-          <li>혜택·쿠폰 · 구독결제(MY) · <b>QR 결제</b>(핵심 플로우)</li>
-          <li>결제 시 쿠폰 선택 → 할인가 적용 → 가맹점 포인트 자동 적립</li>
+        <div class="t-subhead" style="margin-bottom:24px;">화면 8종 · QR 결제 핵심</div>
+        <ul class="blist">
+          <li>홈 · 전통시장 · 맛집 · 놀거리 · 쿠폰 · 구독</li>
+          <li>쿠폰 선택 → 할인 결제 → 가맹점 포인트 적립</li>
         </ul>
       </div>
       <div class="card" style="grid-column:span 5;">
-        <div class="t-subhead" style="margin-bottom:16px;">기술 스택</div>
-        <div class="t-body mono" style="font-size:18px;line-height:1.9;">
-          Flutter · Riverpod · go_router<br>
-          FastAPI (Python 3.12)<br>
-          PostgreSQL 16 · SQLAlchemy async<br>
-          JWT (Access 30분/Refresh 30일)<br>
-          PortOne 결제 · 카카오맵 API
-        </div>
+        <div class="t-subhead" style="margin-bottom:24px;">스택</div>
+        <div class="t-body mono" style="font-size:20px;line-height:2;">Flutter · FastAPI<br>PostgreSQL 16<br>PortOne · 카카오맵</div>
       </div>
     </div>
   </div>
@@ -448,23 +427,19 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div class="eyebrow">02 · 시장패스</div>
     <div style="height:20px;"></div>
     <div class="t-title">3주간 진행 상황</div>
-    <div style="height:36px;"></div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">문서</div>
-        <div class="t-body">PRD · SCREENS · DATA MODEL · SECURITY · API SPEC(약 30개 엔드포인트) 5종 완료</div>
+        <div class="tag" style="margin-bottom:20px;">문서</div>
+        <div class="t-body">PRD · 화면 · API 명세<br><b>5종 완료</b></div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">프론트엔드</div>
-        <div class="t-body">Flutter 앱 골격 완성 — 라우터·네트워크·인증까지 8개 화면 진입 구조 구현</div>
+        <div class="tag" style="margin-bottom:20px;">프론트</div>
+        <div class="t-body">Flutter <b>8개 화면</b><br>골격 완성</div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">백엔드</div>
-        <div class="t-body">FastAPI 10개 모델·9개 라우터, QR 토큰 발급, PortOne 결제 검증 구현</div>
-      </div>
-      <div class="card" style="grid-column:span 12;margin-top:8px;">
-        <div class="tag" style="margin-bottom:14px;">다음 단계</div>
-        <div class="t-body">Flutter ↔ API 실연동 → QR 결제 플로우 완성 → 소셜 로그인 → 배포 인프라 결정</div>
+        <div class="tag" style="margin-bottom:20px;">백엔드</div>
+        <div class="t-body">FastAPI <b>9개 라우터</b><br>QR·결제 구현</div>
       </div>
     </div>
   </div>
@@ -478,22 +453,20 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div class="eyebrow">02 · 시장패스</div>
     <div style="height:20px;"></div>
     <div class="t-title">초기 트랙션 전략</div>
-    <div style="height:36px;"></div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">가게 10곳 등록</div>
-        <ul class="blist dense">
-          <li>가게 손해 0원 제안: 10% 할인분을 월 15만원까지 우리가 대납</li>
-          <li>두 번 방문(손님→제안)으로 "단골"처럼 접근, 강매 없음</li>
-          <li>월 1회 방문객 리포트로 재계약 유도</li>
+        <div class="t-subhead" style="margin-bottom:24px;">가게 10곳</div>
+        <ul class="blist">
+          <li>할인 10%, <b>손해 0원</b> 제안</li>
+          <li>월 15만원까지 우리가 대납</li>
         </ul>
       </div>
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">사용자 100명 확보</div>
-        <ul class="blist dense">
-          <li>친구 추천이든 가게 QR이든 <b>추천인 코드 하나로 통일</b></li>
-          <li>콜드스타트 해결: 학생 서포터즈 고용(홍보+영업 겸임)</li>
-          <li>추천 등록 시 1개월 무료, 첫 구독 990원 별도 프로모션</li>
+        <div class="t-subhead" style="margin-bottom:24px;">사용자 100명</div>
+        <ul class="blist">
+          <li><b>추천인 코드</b> 하나로 통일</li>
+          <li>학생 서포터즈로 콜드스타트</li>
         </ul>
       </div>
     </div>
@@ -507,9 +480,9 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad" style="justify-content:center;">
     <div class="eyebrow">SECTION 03</div>
     <div style="height:24px;"></div>
-    <div class="t-mega">카카오테크캠퍼스<br>+ 실습 프로젝트</div>
+    <div class="t-mega">카카오테크<br>캠퍼스</div>
     <div style="height:24px;"></div>
-    <div class="t-subhead" style="font-weight:500;">LLM 에이전트 부트캠프 3주 — 강의부터 실습 코드까지</div>
+    <div class="t-subhead" style="font-weight:500;">LLM 에이전트 부트캠프 3주</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>03 · KAKAO TECH CAMPUS</div>
   <div class="chrome-counter">13 / 25</div>
@@ -520,31 +493,28 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">03 · KAKAO TECH CAMPUS</div>
     <div style="height:20px;"></div>
-    <div class="t-title">주차별 학습 내용</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">주차별 학습</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
-      <div class="card" style="grid-column:span 4;display:flex;flex-direction:column;">
-        <div class="tag" style="margin-bottom:14px;">Week 1</div>
-        <ul class="blist dense" style="flex:1;">
-          <li>LLM 동작 구조, 프롬프트 종류(System/User/ReAct)</li>
-          <li>@tool 데코레이터로 함수를 LLM Tool로 노출하는 원리</li>
-          <li>Agent 프레임워크의 Tool Call ↔ 자연어 응답 루프</li>
+      <div class="card" style="grid-column:span 4;">
+        <div class="tag" style="margin-bottom:20px;">Week 1</div>
+        <ul class="blist dense">
+          <li>LLM 구조 · 프롬프트</li>
+          <li>@tool 로 함수 노출</li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 4;display:flex;flex-direction:column;">
-        <div class="tag" style="margin-bottom:14px;">Week 2</div>
-        <ul class="blist dense" style="flex:1;">
-          <li>Structured Output — JSON vs Pydantic Class 출력</li>
-          <li>Provider Strategy vs Tool Strategy</li>
-          <li>Embedding·Token화, 고차원→저차원 해석의 의미</li>
+      <div class="card" style="grid-column:span 4;">
+        <div class="tag" style="margin-bottom:20px;">Week 2</div>
+        <ul class="blist dense">
+          <li>Structured Output</li>
+          <li>Embedding · 토큰화</li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 4;display:flex;flex-direction:column;">
-        <div class="tag" style="margin-bottom:14px;">Week 3</div>
-        <ul class="blist dense" style="flex:1;">
-          <li>Agent 평가 방법론(Gold Standard 등)</li>
-          <li>SLM(온디바이스 소형 모델)의 장점</li>
-          <li>Transformer Token/Attention 시각화 이해</li>
+      <div class="card" style="grid-column:span 4;">
+        <div class="tag" style="margin-bottom:20px;">Week 3</div>
+        <ul class="blist dense">
+          <li>Agent 평가 · SLM</li>
+          <li>Transformer Attention</li>
         </ul>
       </div>
     </div>
@@ -553,26 +523,26 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="chrome-counter">14 / 25</div>
 </section>
 
-<!-- ============ 15. 실습 프로젝트 Nana ============ -->
+<!-- ============ 15. Nana agent ============ -->
 <section class="slide">
   <div class="pad">
     <div class="eyebrow">03 · KAKAO TECH CAMPUS</div>
     <div style="height:20px;"></div>
-    <div class="t-title">실습 프로젝트 — "나나(Nana)" 일정관리 에이전트</div>
-    <div class="t-caption">실습 프로젝트 — LangChain 기반, 주차마다 기능을 쌓아 확장</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">실습 — "나나" 일정관리 에이전트</div>
+    <div class="t-caption">LangChain 기반, 주차마다 기능을 쌓아 확장</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">Week 1</div>
-        <div class="t-body">개인 일정 CRUD 3종 Tool 직접 구현 (create/list/delete) + 시간 해석 시스템 프롬프트 설계</div>
+        <div class="tag" style="margin-bottom:20px;">Week 1</div>
+        <div class="t-body">일정 CRUD Tool<br><b>직접 구현</b></div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">Week 2</div>
-        <div class="t-body">자연어 요청을 <b>StructuredRequest</b>(Pydantic)로 구조화 — 형식은 스키마가, 절차는 프롬프트가 담당</div>
+        <div class="tag" style="margin-bottom:20px;">Week 2</div>
+        <div class="t-body">자연어 →<br><b>구조화 데이터</b></div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:14px;">Week 3</div>
-        <div class="t-body">SQLite 영구 저장소 연동 — 대화가 끝나도 유지되는 진짜 "기록장" 구현</div>
+        <div class="tag" style="margin-bottom:20px;">Week 3</div>
+        <div class="t-body">SQLite<br><b>영구 저장</b></div>
       </div>
     </div>
   </div>
@@ -585,20 +555,18 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">03 · KAKAO TECH CAMPUS</div>
     <div style="height:20px;"></div>
-    <div class="t-title">디버깅하며 배운 것</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">배운 것</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">실제로 마주친 버그</div>
-        <ul class="blist dense">
-          <li><span class="mono">@property</span>를 함수처럼 괄호 붙여 호출 → TypeError</li>
-          <li>함수 내 전역변수 대입인데 <span class="mono">global</span> 누락 → UnboundLocalError</li>
-          <li>session_id 미지정으로 저장된 일정이 조회 안 되던 문제</li>
+        <div class="t-subhead" style="margin-bottom:24px;">실전 디버깅</div>
+        <ul class="blist">
+          <li><span class="mono">@property</span> 오호출 → TypeError</li>
+          <li><span class="mono">global</span> 누락 → UnboundLocalError</li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">AI 페어 프로그래밍</div>
-        <div class="t-body">Claude·Copilot에게 스펙(docstring)만 보여주고 "뭘 채우고 뭘 추측하겠냐"고 물어 모호한 지점(spec gap)을 스스로 찾아내는 방식으로 활용</div>
+      <div class="card" style="grid-column:span 6;display:flex;align-items:center;">
+        <div class="t-body">스펙만 보여주고 <b>"뭘 추측하겠냐"</b> 물어 모호한 지점을 스스로 찾는 AI 페어 프로그래밍</div>
       </div>
     </div>
   </div>
@@ -611,9 +579,9 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad" style="justify-content:center;">
     <div class="eyebrow">SECTION 04</div>
     <div style="height:24px;"></div>
-    <div class="t-mega">DIVE 해커톤</div>
+    <div class="t-mega">DIVE<br>해커톤</div>
     <div style="height:24px;"></div>
-    <div class="t-subhead" style="font-weight:500;">HUG(주택도시보증공사) 전세보증 데이터로 매입 의사결정 모델링</div>
+    <div class="t-subhead" style="font-weight:500;">HUG 전세보증 데이터로 리스크 모델링</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>04 · DIVE</div>
   <div class="chrome-counter">17 / 25</div>
@@ -624,20 +592,18 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">04 · DIVE</div>
     <div style="height:20px;"></div>
-    <div class="t-title">문제 정의 — HUG는 어떻게 돈을 버는가</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">HUG는 어떻게 돈을 버는가</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div style="grid-column:span 7;">
         <ul class="blist">
-          <li><b>HUG는 보험회사다</b> — 사고 안 난 다수의 보증료로 사고 난 소수의 손실을 메움</li>
-          <li>관건은 회수율이 아니라 <b>사고율</b> — 보증료율은 정책상 낮게 고정, 마진이 매우 얇음</li>
-          <li>2023년 대위변제 4.9조 폭증 → 보증료 수입의 5배 초과 → 순손실 −3.9조</li>
-          <li>공적 사업이라 가격(요율) 레버는 못 씀 → 남은 레버는 <b>사고율↓ · 회수율↑</b> 뿐</li>
+          <li><b>HUG는 보험회사</b> — 다수 보증료로 소수 손실 메움</li>
+          <li>관건은 회수율이 아니라 <b>사고율</b></li>
+          <li>2023년 대위변제 폭증 → <b>순손실 −3.9조</b></li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 5;">
-        <div class="tag" style="margin-bottom:14px;">데이터</div>
-        <div class="t-body">전세보증 대위변제 66,580건, 경매현황 32,543건 등 8개 표 데이터 — 전부 10만 행 이하 tabular</div>
+      <div class="card" style="grid-column:span 5;display:flex;align-items:center;">
+        <div class="t-body">8개 표 데이터<br><b>10만 행 이하</b></div>
       </div>
     </div>
   </div>
@@ -650,23 +616,23 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">04 · DIVE</div>
     <div style="height:20px;"></div>
-    <div class="t-title">아이디어 — 든든전세주택 셀프낙찰 고도화</div>
+    <div class="t-title">든든전세주택 고도화</div>
     <div style="height:28px;"></div>
-    <div class="card" style="margin-bottom:28px;">
-      <div class="t-body" style="font-size:23px;"><b>손실을 회수하는 과정 자체가 피해자 구제가 되도록 설계한다.</b> 회수율이 낮은 깡통물건을 HUG가 직접 낙찰 → 피해자에게 시세보다 싸게 재임대 → 시장 회복 후 매각해 자본을 다시 투입하는 회전형 구조 (실제 회수율 14%→84.8% 급등 사례에 기반).</div>
+    <div class="card" style="margin-bottom:32px;">
+      <div class="t-subhead">손실 회수 과정 자체가<br><span style="color:var(--accent);">피해자 구제</span>가 되도록</div>
     </div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:12px;">2-1 사업성</div>
-        <div class="t-caption" style="font-size:19px;">이 물건이 나중에 잘 팔릴/임대될 것인가 (회귀·랭킹)</div>
+        <div class="tag" style="margin-bottom:14px;">2-1 사업성</div>
+        <div class="t-caption" style="font-size:20px;">회귀·랭킹</div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:12px;">2-2 낙찰가</div>
-        <div class="t-caption" style="font-size:19px;">적정 낙찰가 산정 (AVM, 회귀)</div>
+        <div class="tag" style="margin-bottom:14px;">2-2 낙찰가</div>
+        <div class="t-caption" style="font-size:20px;">회귀(AVM)</div>
       </div>
       <div class="card" style="grid-column:span 4;">
-        <div class="tag" style="margin-bottom:12px;">2-3 명도리스크</div>
-        <div class="t-caption" style="font-size:19px;">무단점거 확률 예측 (이진 분류)</div>
+        <div class="tag" style="margin-bottom:14px;">2-3 명도리스크</div>
+        <div class="t-caption" style="font-size:20px;">이진 분류</div>
       </div>
     </div>
   </div>
@@ -680,19 +646,17 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div class="eyebrow">04 · DIVE</div>
     <div style="height:20px;"></div>
     <div class="t-title">모델 설계</div>
-    <div style="height:36px;"></div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div style="grid-column:span 7;">
         <ul class="blist">
-          <li><b>CatBoost / LightGBM</b> — 범주형 변수(주택유형·지역) 처리에 유리, tabular 데이터 사실상 표준</li>
-          <li><b>AutoGluon</b>으로 Day 1 베이스라인, <b>TabPFN</b>으로 학습 없는 대조군 검증</li>
-          <li><b>SHAP</b>로 설명가능성 확보 — 공공기관 대상 서비스라 "왜 이 집을 걸렀는지" 근거 필수</li>
-          <li>세 예측을 기대손실 공식(PD×LGD×EAD)과 같은 논리로 하나의 매입 점수로 합산</li>
+          <li><b>CatBoost / LightGBM</b> — tabular 표준</li>
+          <li><b>SHAP</b>로 설명가능성 확보</li>
+          <li>세 예측 → <b>하나의 매입 점수</b></li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 5;">
-        <div class="tag" style="margin-bottom:14px;">CORE FORMULA</div>
-        <div class="t-body mono" style="font-size:19px;">매입 점수 =<br>P(명도 위험 없음)<br>× (예상 회수가치 − 명도·지연비용)</div>
+      <div class="card" style="grid-column:span 5;display:flex;align-items:center;">
+        <div class="t-body mono" style="font-size:21px;">매입 점수 =<br>P(명도위험 없음)<br>× 예상 회수가치</div>
       </div>
     </div>
   </div>
@@ -707,7 +671,7 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div style="height:24px;"></div>
     <div class="t-mega">게임 개발<br>(가제)</div>
     <div style="height:24px;"></div>
-    <div class="t-subhead" style="font-weight:500;">한국사의 존재들과 맞서는 뱀파이어 서바이벌류 로그라이크</div>
+    <div class="t-subhead" style="font-weight:500;">한국사 소재 뱀서라이크 로그라이크</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>05 · 게임 개발</div>
   <div class="chrome-counter">21 / 25</div>
@@ -719,19 +683,17 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div class="eyebrow">05 · 게임 개발</div>
     <div style="height:20px;"></div>
     <div class="t-title">게임 개요</div>
-    <div style="height:36px;"></div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div style="grid-column:span 7;">
         <ul class="blist">
-          <li><b>장르</b> — 뱀파이어 서바이버즈류 (bullet-heaven / auto-battler)</li>
-          <li><b>세계관</b> — 선사시대부터 일제강점기까지, 한국사 속 존재가 되어 싸움</li>
-          <li><b>핵심 재미</b> — 점점 강해지는 감각, 스킬 조합 찾기, 귀엽고 화려한 이펙트</li>
-          <li><b>코어 루프</b> — 이동·자동공격 → 처치·XP → 레벨업 카드 선택 → 웨이브 강화 → 보스</li>
+          <li>선사시대 ~ 일제강점기, <b>한국사 존재</b>가 되어 싸움</li>
+          <li>핵심 재미 — 점점 강해지는 감각, 스킬 조합</li>
+          <li>이동·공격 → 레벨업 카드 → 웨이브 → 보스</li>
         </ul>
       </div>
-      <div class="card" style="grid-column:span 5;">
-        <div class="tag" style="margin-bottom:14px;">엔진 / 구조</div>
-        <div class="t-body mono" style="font-size:18px;line-height:1.9;">Godot 4.3+ / GDScript<br>데이터 주도 설계(JSON)<br>GUT 기반 TDD 워크플로우</div>
+      <div class="card" style="grid-column:span 5;display:flex;align-items:center;">
+        <div class="t-body mono" style="font-size:20px;">Godot 4.3+<br>GDScript</div>
       </div>
     </div>
   </div>
@@ -744,23 +706,21 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">05 · 게임 개발</div>
     <div style="height:20px;"></div>
-    <div class="t-title">아트 스타일 & 캐릭터 애니메이션</div>
-    <div style="height:36px;"></div>
+    <div class="t-title">아트 & 애니메이션</div>
+    <div style="height:48px;"></div>
     <div class="grid12" style="flex:1;">
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">심플 마스코트풍</div>
-        <ul class="blist dense">
-          <li>두꺼운 아웃라인, 큰 눈, 2단 플랫 셰이딩</li>
-          <li>모든 캐릭터 최소 유휴(idle) 애니메이션 필수</li>
-          <li>제작 파이프라인: PixelLab → Aseprite → Godot 검증</li>
+        <div class="t-subhead" style="margin-bottom:24px;">심플 마스코트풍</div>
+        <ul class="blist">
+          <li>두꺼운 아웃라인, 큰 눈</li>
+          <li>모든 캐릭터 <b>유휴 애니메이션</b> 필수</li>
         </ul>
       </div>
       <div class="card" style="grid-column:span 6;">
-        <div class="t-subhead" style="margin-bottom:16px;">곰 → 웅녀 진화 (챕터 1)</div>
-        <ul class="blist dense">
-          <li>필수 동작: Idle · Move · 기본공격 · 피격 · 사망 · 대시</li>
-          <li>스킬은 전용 모션 없이 <b>VFX 12종</b>만으로 연출(제작량 절감)</li>
-          <li>"신 강림"은 유일한 예외 — 실제 포효 컷씬 연출</li>
+        <div class="t-subhead" style="margin-bottom:24px;">곰 → 웅녀 진화</div>
+        <ul class="blist">
+          <li>스킬은 <b>VFX 12종</b>만으로 연출</li>
+          <li>"신 강림"만 유일한 컷씬 예외</li>
         </ul>
       </div>
     </div>
@@ -774,25 +734,24 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   <div class="pad">
     <div class="eyebrow">05 · 게임 개발</div>
     <div style="height:20px;"></div>
-    <div class="t-title">챕터 1 "동굴" — 실제 플레이 화면</div>
+    <div class="t-title">챕터 1 "동굴" — 실제 플레이</div>
     <div style="height:28px;"></div>
     <div class="grid12" style="flex:1;min-height:0;">
-      <div style="grid-column:span 5;display:flex;flex-direction:column;gap:16px;">
+      <div style="grid-column:span 4;display:flex;flex-direction:column;justify-content:center;">
         <ul class="blist dense">
-          <li><b>캐릭터</b> 곰(웅녀 진화) · <b>보스</b> 호랑이</li>
-          <li><b>종료조건</b> 쑥·마늘 10개씩 수집</li>
-          <li><b>스킬 체계</b> 강우·바람·구름 계열 각 4종 + 대쉬</li>
-          <li>같은 계열 스킬 5개를 모두 모으면 신이 강림해 돕는 연출</li>
+          <li><b>곰</b> vs <b>호랑이</b> 보스</li>
+          <li>강우·바람·구름 4종 + 대쉬</li>
+          <li>5개 모으면 신 강림</li>
         </ul>
       </div>
-      <div style="grid-column:span 7;display:flex;">
+      <div style="grid-column:span 8;display:flex;">
         <video class="shot" controls preload="metadata" style="align-self:center;">
           <source src="assets/gameplay.mp4" type="video/mp4">
           영상을 재생할 수 없습니다. 원본 폴더에서 직접 열어주세요.
         </video>
       </div>
     </div>
-    <div class="t-caption" style="margin-top:16px;">※ 게임은 아직 개발 진행 중이며, 위 내용은 현재까지 확정된 기획 기준입니다.</div>
+    <div class="t-caption" style="margin-top:16px;">※ 개발 진행 중, 현재까지 확정된 기획 기준</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>05 · 게임 개발</div>
   <div class="chrome-counter">24 / 25</div>
@@ -805,9 +764,9 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
     <div style="height:24px;"></div>
     <div class="t-display">3주, 다섯 갈래,<br>하나의 방향</div>
     <div style="height:32px;"></div>
-    <div class="t-subhead" style="font-weight:500;max-width:60ch;">논문을 파고들고, 앱을 실제로 만들고, 에이전트를 짜고, 데이터로 문제를 풀고, 게임을 빚었습니다.<br>계속 이어가겠습니다.</div>
+    <div class="t-subhead" style="font-weight:500;">계속 이어가겠습니다.</div>
     <div style="height:48px;"></div>
-    <div class="t-body mono" style="opacity:.8;">김정태 · 2026.06.25 – 2026.07.20</div>
+    <div class="t-body mono" style="opacity:.8;">김정태 · 2026.06.25 – 07.20</div>
   </div>
   <div class="chrome-footer"><span class="dot"></span>SUMMER SESSION</div>
   <div class="chrome-counter">25 / 25</div>
