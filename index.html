@@ -187,6 +187,24 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
   .t-title{font-size:32px;}
   .grid12{grid-template-columns:1fr;}
 }
+
+/* ---------- print / PDF export ---------- */
+.print-poster{display:none;}
+@media print{
+  @page{size:1280px 720px;margin:0;}
+  html,body{background:#fff;}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  #navhint{display:none;}
+  #deck{height:auto;overflow:visible;display:block;}
+  .slide{
+    width:1280px;height:720px;
+    page-break-after:always;break-after:page;
+    scroll-snap-align:none;
+  }
+  .slide:last-child{page-break-after:auto;break-after:auto;}
+  video.shot{display:none;}
+  .print-poster{display:block;}
+}
 </style>
 </head>
 <body>
@@ -744,11 +762,12 @@ video.shot{width:100%;border-radius:12px;border:1px solid var(--line);display:bl
           <li>5개 모으면 신 강림</li>
         </ul>
       </div>
-      <div style="grid-column:span 8;display:flex;">
-        <video class="shot" controls preload="metadata" style="align-self:center;">
+      <div style="grid-column:span 8;display:flex;height:100%;overflow:hidden;">
+        <video class="shot" controls preload="metadata" style="align-self:center;max-height:100%;max-width:100%;object-fit:contain;">
           <source src="assets/gameplay.mp4" type="video/mp4">
           영상을 재생할 수 없습니다. 원본 폴더에서 직접 열어주세요.
         </video>
+        <img class="shot print-poster" src="assets/gameplay-poster.jpg" style="align-self:center;max-height:100%;max-width:100%;object-fit:contain;">
       </div>
     </div>
     <div class="t-caption" style="margin-top:16px;">※ 개발 진행 중, 현재까지 확정된 기획 기준</div>
